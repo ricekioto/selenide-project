@@ -1,13 +1,11 @@
-package com.example.demoqatest;
+package com.example.selenideproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoqaTestApplication {
-
+public class SelenideProjectApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DemoqaTestApplication.class, args);
+        SpringApplication.run(SelenideProjectApplication.class, args);
     }
-
 }
