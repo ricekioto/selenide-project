@@ -1,4 +1,4 @@
-package com.example.selenideproject.config;
+package com.example.selenideproject.demoqa.config;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterAll;
@@ -14,7 +14,7 @@ public interface SelenideConfig {
         Configuration.browserSize = "chrome";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.timeout = 1000;
-        Configuration.pageLoadTimeout = 150000;
+        Configuration.pageLoadTimeout = 150000;;
     }
     @AfterAll
     static void teardown() {
