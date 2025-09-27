@@ -9,5 +9,4 @@ public class ElementsPage {
     public void textBoxCardClick() {
         textBoxCard.click();
     }
-
 }
