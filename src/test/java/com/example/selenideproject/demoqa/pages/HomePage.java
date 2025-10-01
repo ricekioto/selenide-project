@@ -1,13 +1,16 @@
 package com.example.selenideproject.demoqa.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import lombok.AccessLevel;
+import lombok.experimental.FieldDefaults;
 
 import static com.codeborne.selenide.Selenide.$x;
 
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class HomePage {
-    private final SelenideElement elementsCard = $x("//h5[text()='Elements']");
-    private final SelenideElement formsCard = $x("//h5[text()='Forms']");
-    private final SelenideElement bookStoreCard = $x("//h5[text()='Book Store Application']");
+    SelenideElement elementsCard = $x("//h5[text()='Elements']");
+    SelenideElement formsCard = $x("//h5[text()='Forms']");
+    SelenideElement bookStoreCard = $x("//h5[text()='Book Store Application']");
 
     public void clickElementsCard() {
         elementsCard.scrollIntoView("{block: 'center'}").click();
