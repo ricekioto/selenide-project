@@ -1,4 +1,4 @@
-package com.example.selenideproject.demoqa.test;
+package com.example.selenideproject.demoqa.test.elements;
 
 import com.codeborne.selenide.Selenide;
 import com.example.selenideproject.demoqa.config.SelenideConfig;

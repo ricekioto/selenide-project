@@ -1,4 +1,4 @@
-package com.example.selenideproject.demoqa.test;
+package com.example.selenideproject.demoqa.test.elements;
 
 import com.example.selenideproject.demoqa.config.SelenideConfig;
 import com.example.selenideproject.demoqa.pages.elements.RadioButtonPage;
