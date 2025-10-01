@@ -2,7 +2,6 @@ package com.example.selenideproject.demoqa.test;
 
 import com.example.selenideproject.demoqa.config.SelenideConfig;
 import com.example.selenideproject.demoqa.pages.elements.WebTablesPage;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
