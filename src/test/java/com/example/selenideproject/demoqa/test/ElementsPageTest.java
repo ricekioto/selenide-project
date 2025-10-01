@@ -12,8 +12,8 @@ public class ElementsPageTest implements SelenideConfig {
 
     @BeforeAll
     public static void beforeAll() {
-        Selenide.open("/elements");
         elementsPage = new ElementsPage();
+        elementsPage.open();
     }
 
     @Test

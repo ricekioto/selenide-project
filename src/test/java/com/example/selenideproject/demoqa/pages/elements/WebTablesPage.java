@@ -1,6 +1,7 @@
 package com.example.selenideproject.demoqa.pages.elements;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -18,6 +19,10 @@ public class WebTablesPage {
     SelenideElement inputDepartment = $x("//input[@placeholder='Department']");
     SelenideElement submitButton = $x("//button[@id='submit']");
     SelenideElement tableDiv = $x("//div[@class='rt-table']");
+
+    public void open() {
+        Selenide.open("/webtables"); // Переключение на первое окно
+    }
 
     public void clickAddButton() {
         addButton.click();

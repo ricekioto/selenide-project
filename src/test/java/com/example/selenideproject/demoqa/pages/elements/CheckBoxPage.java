@@ -1,5 +1,6 @@
 package com.example.selenideproject.demoqa.pages.elements;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -14,6 +15,10 @@ public class CheckBoxPage {
     SelenideElement notesSelector = $x("//span[contains(text(),'Notes')]");
     SelenideElement result = $x("//div[@id='result']");
     SelenideElement buttonExpendAll = $x("//button[@title='Expand all']");
+
+    public void open() {
+        Selenide.open("checkbox"); // Переключение на первое окно
+    }
 
     public void clickAngularSelector() {
         angularSelector.scrollIntoView(true).click();

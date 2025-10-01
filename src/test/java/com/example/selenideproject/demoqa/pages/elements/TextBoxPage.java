@@ -15,6 +15,10 @@ public class TextBoxPage {
     SelenideElement submitButton = Selenide.$x("//button[@class='btn btn-primary']");
     SelenideElement result = Selenide.$x("//div[@class='mt-4 row']");
 
+    public void open() {
+        Selenide.open("/text-box"); // Переключение на первое окно
+    }
+
     public void enterFullName(String fullName) {
         inputFullName.setValue(fullName);
     }

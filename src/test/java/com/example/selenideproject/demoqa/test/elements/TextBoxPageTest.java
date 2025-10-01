@@ -12,7 +12,7 @@ public class TextBoxPageTest implements SelenideConfig {
     @BeforeAll
     public static void beforeAll() {
         textBoxPage = new TextBoxPage();
-        Selenide.open("/text-box");
+        textBoxPage.open();
     }
 
     @Test

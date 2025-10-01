@@ -12,8 +12,8 @@ public class CheckBoxPageTest implements SelenideConfig {
 
     @BeforeAll
     public static void beforeAll() {
-        open("/checkbox");
         checkBoxPage = new CheckBoxPage();
+        checkBoxPage.open();
     }
 
     @Test

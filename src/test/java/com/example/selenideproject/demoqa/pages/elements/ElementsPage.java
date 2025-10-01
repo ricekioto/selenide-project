@@ -17,6 +17,10 @@ public class ElementsPage {
     SelenideElement uploadAndDownloadCard = Selenide.$x("//span[text()='Upload And Download']");
     SelenideElement dynamicPropertiesCard = Selenide.$x("//span[text()='Dynamic Properties']");
 
+    public void open() {
+        Selenide.open("/elements"); // Переключение на первое окно
+    }
+
     public void textBoxCardClick() {
         textBoxCard.click();
     }

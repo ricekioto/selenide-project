@@ -12,8 +12,8 @@ public class ButtonsPageTest implements SelenideConfig {
 
     @BeforeAll
     public static void beforeAll() {
-        open("/buttons");
         buttonsPage = new ButtonsPage();
+        buttonsPage.open();
     }
 
     @Test

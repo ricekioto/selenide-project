@@ -1,6 +1,7 @@
 package com.example.selenideproject.demoqa.pages.elements;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -15,6 +16,10 @@ public class ButtonsPage {
     SelenideElement doubleClickMessage = $x("//p[@id='doubleClickMessage']");
     SelenideElement rightClickMessage = $x("//p[@id='rightClickMessage']");
     SelenideElement clickButtonMessage = $x("//p[@id='dynamicClickMessage']");
+
+    public void open() {
+        Selenide.open("/buttons"); // Переключение на первое окно
+    }
 
     public void clickDoubleClickMeButton() {
         doubleClickMeButton.doubleClick();

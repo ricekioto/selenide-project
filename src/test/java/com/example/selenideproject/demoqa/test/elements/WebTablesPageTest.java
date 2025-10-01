@@ -12,8 +12,8 @@ public class WebTablesPageTest implements SelenideConfig {
 
     @BeforeAll
     public static void beforeAll() {
-        open("/webtables");
         webTablesPage = new WebTablesPage();
+        webTablesPage.open();
     }
 
     @Test

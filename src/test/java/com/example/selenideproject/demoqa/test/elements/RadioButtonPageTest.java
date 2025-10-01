@@ -12,8 +12,8 @@ public class RadioButtonPageTest implements SelenideConfig {
 
     @BeforeAll
     public static void beforeAll() {
-        open("/radio-button");
         radioButtonPage = new RadioButtonPage();
+        radioButtonPage.open();
     }
 
     @Test
