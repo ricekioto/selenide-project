@@ -12,7 +12,7 @@ public class CheckBoxPage {
     SelenideElement angularSelector = $x("//span[contains(text(),'Angular')]");
     SelenideElement generalSelector = $x("//span[contains(text(),'General')]");
     SelenideElement notesSelector = $x("//span[contains(text(),'Notes')]");
-    SelenideElement result =  $x("//div[@id='result']");
+    SelenideElement result = $x("//div[@id='result']");
     SelenideElement buttonExpendAll = $x("//button[@title='Expand all']");
 
     public void clickAngularSelector() {
