@@ -16,7 +16,7 @@ public class BrokenLinksImagesPageTest implements SelenideConfig {
 
     @Test
     public void brokenLinksImagesPageTest() {
-        brokenLinksImagesPage.verifyBrokenImage();
+        brokenLinksImagesPage.verifyValidImage();
         brokenLinksImagesPage.verifyBrokenImage();
 
         brokenLinksImagesPage.clickValidLink();
