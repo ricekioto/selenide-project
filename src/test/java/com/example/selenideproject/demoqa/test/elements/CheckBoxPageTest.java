@@ -5,8 +5,6 @@ import com.example.selenideproject.demoqa.pages.elements.CheckBoxPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.open;
-
 public class CheckBoxPageTest implements SelenideConfig {
     private static CheckBoxPage checkBoxPage;
 
